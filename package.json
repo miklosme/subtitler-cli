@@ -1,0 +1,39 @@
+{
+  "name": "subtitler-cli",
+  "version": "1.0.0",
+  "description": "Get correct subtitles to your videos just by a command line command",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint index.js lib"
+  },
+  "bin": {
+    "subtitler": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CAPSLOCKUSER/subtitler-cli.git"
+  },
+  "keywords": [
+    "subtitle",
+    "video",
+    "cli"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "author": "CAPSLOCKUSER <m.miklos05@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CAPSLOCKUSER/subtitler-cli/issues"
+  },
+  "homepage": "https://github.com/CAPSLOCKUSER/subtitler-cli#readme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb-base": "^2.0.0",
+    "eslint-plugin-import": "^1.6.1"
+  }
+}
