@@ -2,11 +2,11 @@
 
 'use strict';
 
-const fs = require('fs');
 const program = require('commander');
-const isVideo = require('is-video');
-const getHash = require('./lib/get-hash');
 require('colors');
+
+const getVideoFiles = require('./lib/get-video-files');
+const getHash = require('./lib/get-hash');
 
 program
   .version('1.0.0')
@@ -15,12 +15,23 @@ program
 
 console.log('language: ', program.language);
 
-fs.readdirSync('./')
+/*fs.readdirSync('./')
   .filter(isVideo)
   .forEach(videoFile => {
-    getHash('./' + videoFile, (file => hash => {
+    getHash('./' + videoFile)
+      .then(hash => {
+        console.log(videoFile.green);
+        console.log(hash.red);
+      })
+      .then();
+  });*/
 
-      console.log(videoFile.green);
-      console.log(hash.red);
-    })(videoFile));
+getVideoFiles('./')
+  .then(getHash)
+  .then(hashes => {
+    hashes.forEach(hash => {
+      console.log(hash.green);
+    });
   });
+  //.then(requestSubDB)
+  //.then(saveSubtitles);
