@@ -1,7 +1,7 @@
 {
   "name": "subtitler-cli",
   "version": "1.0.0",
-  "description": "Get correct subtitles to your videos just by a command line command",
+  "description": "Get subtitles for your videos just by a command line command",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
