@@ -20,7 +20,7 @@
     "cli"
   ],
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "author": "CAPSLOCKUSER <m.miklos05@gmail.com>",
   "license": "MIT",
@@ -29,15 +29,16 @@
   },
   "homepage": "https://github.com/CAPSLOCKUSER/subtitler-cli#readme",
   "dependencies": {
-    "colors": "^1.1.2",
-    "commander": "^2.9.0",
-    "fs-readdir-promise": "^1.0.1",
-    "is-video": "^1.0.1",
-    "request-promise": "^3.0.0"
+    "colors": "1.1.2",
+    "commander": "2.9.0",
+    "fs-readdir-promise": "1.0.1",
+    "is-video": "1.0.1",
+    "querystring": "0.2.0",
+    "request-promise": "3.0.0"
   },
   "devDependencies": {
-    "eslint": "^2.9.0",
-    "eslint-config-airbnb-base": "^2.0.0",
-    "eslint-plugin-import": "^1.6.1"
+    "eslint": "2.9.0",
+    "eslint-config-airbnb-base": "2.0.0",
+    "eslint-plugin-import": "1.6.1"
   }
 }
